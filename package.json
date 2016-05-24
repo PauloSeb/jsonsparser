@@ -1,6 +1,6 @@
 {
   "name": "jsonsparser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read JSONs from a stream.",
   "main": "jsonsparser.js",
   "directories": {
@@ -14,16 +14,15 @@
     "stream",
     "parser"
   ],
-  "repository": { 
-    "type" : "git",
-    "url" : "https://github.com/PauloSeb/jsonsparser.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PauloSeb/jsonsparser.git"
   },
   "bugs": {
     "url": "https://github.com/PauloSeb/jsonsparser/issues"
   },
   "license": "MIT",
   "author": "Paul SEBASTIEN",
-  "license": "MIT",
   "devDependencies": {
     "mocha": "^2.4.5"
   }
