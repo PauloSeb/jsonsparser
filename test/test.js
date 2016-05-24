@@ -82,4 +82,16 @@ describe('JSONsparser', () => {
     input.push(null)
   })
 
+  it('should parse top-level array JSON (#1)', (done) => {
+    const data = '[1, {"hello": "world"}]'
+    const expected = JSON.parse('[1, {"hello": "world"}]')
+    jsonsparser.once('data', (data) => {
+      assert.deepEqual(data, expected)
+      done()
+    })
+    input.pipe(jsonsparser)
+    input.push(data)
+    input.push(null)
+  })
+
 })

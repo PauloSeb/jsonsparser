@@ -33,9 +33,9 @@ module.exports = class JSONsparser extends Duplex {
 
   _write(chunk, encoding, callback) {
     for(let char of chunk.toString()) {
-      if(char === '{') this._brackets++
+      if(char === '{' || char === '[') this._brackets++
       if(this._brackets > 0) this._jsonStr += char
-      if(char === '}' && this._brackets > 0) this._brackets--
+      if((char === '}' || char === ']') && this._brackets > 0) this._brackets--
       if(this._brackets === 0 && this._jsonStr.length !== 0) {
         let json
         try {
