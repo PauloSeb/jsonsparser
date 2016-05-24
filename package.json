@@ -1,0 +1,30 @@
+{
+  "name": "jsonsparser",
+  "version": "1.0.0",
+  "description": "Read JSONs from a stream.",
+  "main": "jsonsparser.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha test/test.js"
+  },
+  "keywords": [
+    "JSON",
+    "stream",
+    "parser"
+  ],
+  "repository": { 
+    "type" : "git",
+    "url" : "https://github.com/PauloSeb/jsonsparser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PauloSeb/jsonsparser/issues"
+  },
+  "license": "MIT",
+  "author": "Paul SEBASTIEN",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
+}
